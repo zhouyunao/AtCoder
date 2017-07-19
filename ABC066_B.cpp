@@ -47,6 +47,8 @@ int main(){
 	文字列の長さiを求める
 	最後の \0 までloop
 	例：　abc\0
+	version up:
+	strlen(ch)
 	*/
 	while(ch[i] != '\0'){
 		i++;
@@ -64,6 +66,8 @@ int main(){
 	奇数の場合　continueで略する
 	偶数の場合　インデックス　t-1 と　t-i/2-1　の
 	文字を照合して　不一致の場合 flagを0に置く
+	version up:
+	strcmp(ch, ch+i/2, i/2) == 0;
 	最後条件（　flag==1　と　i<N　）が満たしたら　break
 	}
 	*/
